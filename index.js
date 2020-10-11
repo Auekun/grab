@@ -16,10 +16,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 
 
-
 //router
 app.use('/api',restaurantRouter);
-
 app.listen(3000,()=>{
     console.log('Listening to port 3000');
 });

@@ -1,10 +1,18 @@
-<h1> Restaurant </h1>
-<ul class="restaurant">
-    {{#each restaurants}} 
-    <il class="restaurant-item">
-        <img src = "{{this.imageURL}}" class="restaurants-item-image">
-        <div class="restaurant-item-name">{{this.name}}</div>
-        <small class="restaurant-item-type"> {{this.type}}</small>
-        </il>
+<br><br>
+<div class="container">
+    <div class="row">
+        {{#each restaurants}}
+        <div class="column">
+            <div class="card"style="margin-bottom: 5%;" >
+              
+                    <img src="{{imageURL}}" class="card-img-top">
+                    <div class="card-body">
+                        <h6 class="card-title"><b>{{name}}</b></h6>
+                        <p class="card-text">{{type}}</p>
+                    </div>
+                
+            </div>
+        </div>
         {{/each}}
-        </ul>>
+    </div>
+</div>
